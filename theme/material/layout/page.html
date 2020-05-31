@@ -1,0 +1,45 @@
+{%set page_typ='article'%}
+{%extends "base.html"%}
+{%block content%}
+<div class="mdui-card article">
+    {%if t_config.theme=='beauty'%}
+    <div class="mdui-card-media">
+        <img data-src="{{mg(thumbnail,randimg())}}" height="300px" style="object-fit: cover;">
+        <div class="mdui-card-media-covered">
+            <div class="mdui-card-primary">
+                <div class="mdui-card-primary-title">{{title}}</div>
+                <div class="mdui-card-primary-subtitle">{{gen_tags(tags)}}</div>
+            </div>
+        </div>
+    </div>
+    {%else%}
+    <div class="mdui-card-primary">
+        <div class="mdui-card-primary-title">{{title}}</div>
+        <div class="mdui-card-primary-subtitle">{{gen_tags(tags)}}</div>
+    </div>
+    {%endif%}
+    <div class="mdui-card-header">
+        <img class="mdui-card-header-avatar" src="{{mg(avatar,t_config.avatar)}}">
+        <div class="mdui-card-header-title">{{author}}</div>
+        <div class="mdui-card-header-subtitle">{{date}}</div>
+        <div class="mdui-card-menu">
+            <span id="{{title}}" class="leancloud_visitors" data-flag-title="Your Article Title" hidden>
+                <em class="post-meta-item-text">阅读量</em>
+                <i class="leancloud-visitors-count">1000000</i>
+            </span>
+            {%include 'share_menu.html'%}
+        </div>
+    </div>
+    <div class="mdui-card-content">
+        {{html}}
+        <div id="md_out" class="markdown-body">{{content}}</div>
+    </div>
+</div>
+<div class="mdui-card" style="margin-top: 50px;">
+    <div class="mdui-card-content">
+        {%if comment==True%}
+        {%include "comment.html"%}
+        {%else%}评论未开放{%endif%}
+    </div>
+</div>
+{%endblock%}

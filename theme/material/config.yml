@@ -1,0 +1,157 @@
+avatar: https://cdn.jsdelivr.net/gh/zcmimi/cdn@master/img/avatar_2.webp
+assets_rt: 
+  # 如果有cdn提高assets文件夹的加载速度,请填入地址
+  # 否则留空
+theme: beauty # (beauty|clean)
+
+randomimg:
+  type: folder # (folder|list)
+  path: https://cdn.jsdelivr.net/gh/zcmimi/cdn@master/img
+  cnt: 36
+  suf: webp
+  list: # urls
+
+comment: 
+  enable: False
+  typ: valine
+  valine_appid: <your appid>
+  valine_appkey: <your appkey>
+  valine_placeholder: 说几句嘛qwq
+
+autopjax: False # auto pjax
+
+music:
+  enable: True
+  server: netease
+  id: 765727960
+  order: random
+  color: '#f7a4b9'
+
+appbar:
+  标签云: /tags
+  分类: /categories
+  友链: /links
+  工具集: /tools
+  关于我: /about
+
+head_card:
+  enable: True
+  img: https://cdn.jsdelivr.net/gh/zcmimi/cdn@master/img/1.webp
+  logo: https://cdn.jsdelivr.net/gh/zcmimi/cdn@master/img/avatar_2.webp
+  text: nya~
+  introduction: oier & archlinuxer
+  pages:
+    标签云: /tags
+    分类: /categories
+    友链: /links
+    工具集: /tools
+    关于我: /about
+
+footer:
+  enable: True
+  site_create_date: 2019
+  site_till_date: 2020
+  icons:
+    github: https://github.com
+    bilibili: https://space.bilibili.com
+    zhihu: https://www.zhihu.com/people
+    twitter: https://twitter.com
+
+drawer:
+  Pages:
+  - content: 标签云
+    url: /tags
+    icon:
+      typ: mdui # (mdui|mqii|img)
+      data: bookmark_border
+      color: black
+  - content: 分类
+    url: /categories
+    icon:
+      typ: mdui
+      data: book
+      color: black
+  - content: 友链
+    url: /links
+    icon:
+      typ: mdui
+      data: link
+      color: black
+  - content: 工具集
+    url: /tools
+    icon:
+      typ: mdui
+      data: build
+      color: black
+  - content: 关于我
+    url: /about
+    icon:
+      typ: mdui
+      data: person
+      color: black
+  - content: 订阅
+    url: /atom.xml
+    icon:
+      typ: mdui
+      data: rss_feed
+      color: black
+    icon:
+      typ: mdui
+      data: comment
+      color: black
+  Catch me:
+  - content: 给我写信
+    url: http://mail.qq.com/
+    icon:
+      typ: mdui
+      data: email
+      color: dodgerblue
+  - content: 电报
+    url: https://t.me/
+    icon:
+      typ: mqii
+      data: telegram
+      color: '#66ccff'
+  - content: 推特
+    url: https://twitter.com/
+    icon:
+      typ: mqii
+      data: twitter
+      color: rgba(29,161,242,1.00)
+  - content: 哔哩哔哩
+    url: https://space.bilibili.com/
+    icon:
+      typ: mqii
+      data: bilibili
+      color: '#F06292'
+  - content: 网易云音乐
+    url: https://music.163.com/my
+    icon:
+      typ: mqii
+      data: netease-cloud-music
+      color: red
+  - content: 知乎
+    url: https://www.zhihu.com/
+    icon:
+      typ: mqii
+      data: zhihu
+      color: '#0084ff'
+  - content: 洛谷
+    url: https://luogu.com.cn/
+    icon_typ: img
+    icon: https://www.luogu.com.cn/favicon.ico
+  - content: Github
+    url: https://github.com/
+    icon:
+      typ: mqii
+      data: github
+      color: black
+
+search:
+  typ: local # now only local
+  file: /pure_data.json
+
+share_menu:
+  twitter: True
+  weibo: True
+  qq: True
