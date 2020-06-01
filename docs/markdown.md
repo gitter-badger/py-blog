@@ -2,7 +2,7 @@
 
 使用[mistune v1](https://github.com/lepture/mistune/tree/v1)渲染`markdown`
 
-**latex支持**(需主题支持):
+**启用Latex支持**(需主题支持):
 
 在config添加`math: true`
 
