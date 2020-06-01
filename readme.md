@@ -20,7 +20,7 @@ A fast and useful static blog builder, based on `python`
     git clone https://github.com/zcmimi/py-blog.git
     ```
     
-    或下载https://github.com/zcmimi/py-blog/archive/master.zip
+    或下载https://github.com/zcmimi/py-blog/archive/master.zip , 并解压
     
     然后进入项目目录`cd py-blog`,你也可以把文件夹重命名为你喜欢的名字
     
