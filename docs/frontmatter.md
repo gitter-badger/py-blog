@@ -45,7 +45,7 @@ write something
 
 分类方法:
 
-> 假设要添加`Diary`和`Lify`两个并列分类
+> 假设要添加`Diary`和`Life`两个并列分类
 > 
 > ```yaml
 > categories:
