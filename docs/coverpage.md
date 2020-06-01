@@ -1,4 +1,4 @@
-## py-blog
+# py-blog
 
 A fast and useful static blog builder, based on `python`
 
